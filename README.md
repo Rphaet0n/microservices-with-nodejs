@@ -1,6 +1,6 @@
 # Microservice test project
 Проект состоит из 2-х сервисов
- - Web-API с OAuth2 сервером и базой mongoDB
+ - Web-API с Passport+OAuth2 для аутентификации и авторизации и базой mongoDB
  - Сервис-данных - REST-API + Postgres
  
 Клиент-браузер общается только с Web-API
