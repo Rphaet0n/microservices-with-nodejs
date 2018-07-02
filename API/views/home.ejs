@@ -1,0 +1,8 @@
+<% if (!user) { %>
+	<p>Welcome! Please <a href="/login">log in</a>.</p>
+<% } else { %>
+	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a></p>
+	<p>See all articles <a href="/articles">articles</a></p>
+	<p>Add article <a href="/create_article">article</a></p>		
+	<p><a href="/logout">Logout</a></p>
+<% } %>

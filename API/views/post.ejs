@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Post</title>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Kaushan+Script' rel='stylesheet' ty pe='text/css'>
+  </head>
+  <body>
+    <form id="testimonialform" method = "POST" action = "/create_article">
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title"></br></br>
+        <label for="content">Content</label>
+        <textarea rows="10" cols="40" id="content" name="content"></textarea></br></br>
+        <input type="submit" value="Submit">
+    </form>
+  </body>

@@ -5,7 +5,7 @@ var db = require('../queries');
 
 router.get('/api/articles', db.getAllArticles);
 router.get('/api/articles/:id', db.getSingleArticle);
-router.post('/api/article', db.createArticle);
+router.post('/api/create_article', db.createArticle);
 router.put('/api/articles/:id', db.updateArticle);
 router.delete('/api/articles/:id', db.removeArticle);
 

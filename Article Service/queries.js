@@ -26,6 +26,7 @@ function getAllArticles(req, res, next) {
 
 function getSingleArticle(req, res, next) {
   var pupID = parseInt(req.params.id);
+  console.log(req)
   db.one('select * from artics where id = $1', pupID)
     .then(function (data) {
       res.status(200)
@@ -41,6 +42,7 @@ function getSingleArticle(req, res, next) {
 }
 
 function createArticle(req, res, next) {
+  console.log(`requset: ${req.body.author}`)
   db.none('insert into artics(author, title, content)' +
       'values(${author}, ${title}, ${content})',
     req.body)
